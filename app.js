@@ -34,13 +34,13 @@ const showWinner = (w)=>{
     })
 }
 
-const draw= ()=>{
+/*const draw= ()=>{
     msg.innerText="Match Drawn";
     msgCont.classList.remove("hide");
     boxes.forEach((box)=>{
         box.disabled=true;
     })
-}
+}*/
 
 const checkWinner= ()=>{
     for(let pattern of winPatterns){
@@ -52,7 +52,7 @@ const checkWinner= ()=>{
             if(pos1val==pos2val && pos2val==pos3val){
                 showWinner(pos1val);
             }
-            else if(count=9 && pos1val!=pos2val && pos2val!=pos3val){draw();}
+           // else if(count=9 && pos1val!=pos2val && pos2val!=pos3val){draw();}
                 
         }
     
